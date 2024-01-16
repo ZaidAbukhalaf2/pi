@@ -15,7 +15,7 @@ class TagRepository
     public function index()
     {
 
-        return Tag::all();
+        return Tag::paginate(10);
     }
 
     /**

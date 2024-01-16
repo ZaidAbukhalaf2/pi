@@ -15,8 +15,8 @@ class ProductTagRepository
     public function index()
     {
 
-    
-        return product_tag::with('product','tag')->get();
+
+        return product_tag::with('product','tag')->paginate(10);
     }
 
     /**

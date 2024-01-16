@@ -18,7 +18,7 @@ class Product extends Model
         'name',
         'description',
         'price',
-        'category',
+        'category_id',
         'image_id',
     ];
 
@@ -29,6 +29,6 @@ class Product extends Model
 
     public function category()
     {
-        return $this->belongsTo(Category::class,'category');
+        return $this->belongsTo(Category::class,'category_id');
     }
 }

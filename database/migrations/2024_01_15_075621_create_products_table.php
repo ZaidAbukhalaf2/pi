@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('name');
             $table->text('description');
             $table->decimal('price', 10, 2);
-            $table->bigInteger('category');
-            $table->integer('image_id')->nullable();
+            $table->bigInteger('category_id');
+            $table->text('image_id')->nullable();
             $table->timestamps();
         });
     }
